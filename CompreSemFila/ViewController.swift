@@ -15,17 +15,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let url = URL(string: "https://www.compresemfila.com.br")
+        let url = URL(string: "https://www.compresemfila.com.br/pageinicial-login")
         webView.loadRequest(URLRequest(url: url!))
     }
-
-    @IBAction func backButton(sender: AnyObject) {
-        webView.goBack()
-    }
     
-    @IBAction func forwardButton(sender: AnyObject) {
-        webView.goForward()
-    }
+    // Botao voltar comentado para Luiz
+//    @IBAction func backButton(sender: AnyObject!) {
+//        webView.goBack()
+//    }
+    // Botão avançar comentado para Luiz
+//    @IBAction func forwardButton(sender: AnyObject!) {
+//        webView.goForward()
+//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
